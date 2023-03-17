@@ -1,0 +1,101 @@
+/*MOBILE*/
+
+body{
+    margin: 0;
+    margin-top: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+nav{
+    margin-top: 6vw;
+    background-color: #CCCCFF;
+    font-size: 0.8rem;
+    font-family: cursive;
+}
+
+nav ul{
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav li{
+    display: flex;
+    position: relative;
+}
+
+ul img{
+    position: absolute;
+    left: 5vw;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#contato{
+    height: 35px;
+    display: flex;
+    align-self: center;
+}
+
+#whatsapp{
+    position: absolute;
+    left: 8vw;
+}
+
+#resp{
+    font-size: 0.5rem;
+    position: absolute;
+    left: 15vw;
+}
+
+#relogio{
+    position: absolute;
+    top: 8vw;
+    left: 8vw;
+}
+
+#horario{
+    font-size: 0.5rem;
+    position: absolute;
+    top: 8vw;
+    left: 15vw;
+}
+
+#visita{
+    background-color: #CCCCFF;
+    position: absolute;
+    left: 65vw;
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    padding-top: 2vw;
+    padding-left: 1vw;
+}
+
+#fachada{
+    background-image: url(../img/fachada.jpg);
+    width: 100vw;
+    height: 120vw;
+}
+
+#fachada h1{
+    font-size: 1.5rem;
+    color: #fff;
+    position: absolute;
+    top: 70vw;
+    left: 10vw;
+}
+
+#fachada h2{
+    font-size: 1rem;
+    color: #fff;
+    position: absolute;
+    top: 92vw;
+    left: 10vw;
+}
+
