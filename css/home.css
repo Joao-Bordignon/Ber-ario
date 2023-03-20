@@ -1,0 +1,111 @@
+/*MOBILE*/
+
+body{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    background-color: #CCCCFF;
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+    width: 96.4%;
+    justify-content: space-around;
+}
+
+nav > img {
+    max-width: 100%;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 0;
+}
+
+ul > li {
+    list-style: none;
+    font-size: 1,5rem;
+    align-self: center;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+}
+
+.infos img{
+    padding-right: 1vw; 
+}
+
+.contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 35px;
+    padding: 4vw;
+}
+
+.whatsapp{
+    display: flex;
+    font-size: 0.5rem;
+}
+
+.horario{
+    display: flex;
+    font-size: 0.5rem
+}
+
+.visita{
+    background-color: #CCCCFF;
+    display: flex;
+    align-items: center;
+    padding: 2vh;
+    border-radius: 5px;
+    font-size: 0.6rem;
+}
+
+.fachada{
+    background-image: url(../img/fachada.jpg);
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 120vw;
+}
+
+.interior{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.interior h1{
+    font-size: 1.2rem;
+    width: 65%;
+}
+
+.interior h2{
+    font-size: 0.9rem;
+    width: 50%;
+}
+
+.interior p{
+    background-color: #CCCCFF;
+    display: flex;
+    justify-content: center;
+    padding: 1vh;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    width: 55%;
+}
