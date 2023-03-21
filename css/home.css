@@ -1,16 +1,16 @@
 /*MOBILE*/
 
-body{
+body {
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-header{
+header {
     display: flex;
     flex-direction: column;
 }
 
-nav{
+nav {
     background-color: #CCCCFF;
     padding: 0;
     display: flex;
@@ -19,56 +19,56 @@ nav{
     justify-content: space-around;
 }
 
-nav > img {
+nav>img {
     max-width: 100%;
 }
 
-ul{
+ul {
     display: flex;
     flex-direction: column;
     gap: 2vh;
     padding: 0;
 }
 
-ul > li {
+ul>li {
     list-style: none;
     font-size: 1.2rem;
     align-self: center;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
 }
 
-a{
+a {
     text-decoration: none;
     color: #fff;
 }
 
-footer{
+footer {
     background-color: #5336F6;
-    height: 21vh;
+    height: 15vh;
     font-size: 0.7rem;
     display: flex;
     justify-content: center;
 }
 
-footer a{
+footer a {
     color: grey;
 }
 
-.direitos-autorais{
+.direitos-autorais {
     color: grey;
     margin: 0;
 }
 
-.infos{
+.infos {
     display: flex;
     flex-direction: column;
 }
 
-.infos img{
-    padding-right: 1vw; 
+.infos img {
+    padding-right: 1vw;
 }
 
-.contato{
+.contato {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -76,19 +76,19 @@ footer a{
     padding: 4vw;
 }
 
-.whatsapp{
+.whatsapp {
     display: flex;
     font-size: 0.5rem;
 }
 
-.horario{
+.horario {
     display: flex;
     font-size: 0.5rem
 }
 
-.visita{
+.visita {
     background-color: #CCCCFF;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
     display: flex;
     align-items: center;
     padding: 2vh;
@@ -96,15 +96,15 @@ footer a{
     font-size: 0.7rem;
 }
 
-.fachada{
+.fachada {
     background-image: url(../img/fachada.jpg);
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     display: flex;
     width: 100%;
     height: 55vh;
 }
 
-.interior{
+.interior {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,17 +112,17 @@ footer a{
     color: #fff;
 }
 
-.interior h1{
+.interior h1 {
     font-size: 1.2rem;
     text-shadow: 1px 4px 9px #000000;
 }
 
-.interior h2{
+.interior h2 {
     font-size: 1rem;
     text-shadow: 1px 4px 9px #000000;
 }
 
-.interior p{
+.interior p {
     background-color: #CCCCFF;
     display: flex;
     justify-content: center;
@@ -132,18 +132,18 @@ footer a{
     text-shadow: 1px 4px 10px #000000;
 }
 
-.qualidades{
+.qualidades {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.qualidades h3{
+.qualidades h3 {
     margin: 0;
     font-size: 1.5rem;
 }
 
-.qualidades p{
+.qualidades p {
     display: flex;
     align-content: center;
     width: 85vw;
@@ -151,7 +151,7 @@ footer a{
     font-size: 1.1rem;
 }
 
-.bebe{
+.bebe {
     background-image: url(../img/backgroundbebe-celular.jpg);
     background-repeat: no-repeat;
     width: 100%;
@@ -159,8 +159,154 @@ footer a{
     color: #fff;
 }
 
-.idades{
+.idades {
     font-size: 1rem;
     text-shadow: 1px 4px 9px #000000;
     padding: 3vh;
+}
+
+@media screen and (min-width:481px) {
+
+    .infos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .infos p {
+        padding-right: 1.5vw;
+        margin: 0;
+        margin-top: 2vh;
+        font-size: 0.8rem;
+    }
+
+    .infos img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .visita {
+        font-size: 0.9rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav>img {
+        width: 150px;
+        height: 150px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul>li {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    ::-webkit-scrollbar{
+        width: 18px;
+    }
+
+    ::-webkit-scrollbar-track{
+        border-radius: 5px;
+        background-color: hsl(0, 0%, 87%);
+    }
+
+    ::-webkit-scrollbar-thumb{
+        border-radius: 35px;
+        background-color: hsl(240, 100%, 77%);
+    }
+
+    .infos {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .infos p {
+        font-size: 1.2rem;
+    }
+
+    .infos img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .visita {
+        font-size: 1rem;
+        padding: 2vw;
+        border-radius: 10px ;
+    }
+
+    .visita:hover{
+        transform: scale(1.2);
+    }
+
+    nav{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    nav>img{
+        width: 250px;
+        height: 250px;
+        padding-right: 12vw;
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+    }
+
+    ul>li{
+        padding: 1vw;
+        font-size: 2rem;
+    }
+
+    li:hover{
+        transform: scale(1.2);
+    }
+
+    .fachada{
+        background-image: url(../img/fachada-desktop.jpg);
+        width: 100%;
+        height: 115vh;
+    }
+
+    .interior h1{
+        font-size: 2.3rem;
+        width: 50vw;
+    }
+
+    .interior h2{
+        font-size: 1.5rem;
+        width: 35vw;
+    }
+
+    .interior p{
+        font-size: 1.2rem;
+        width: 35vw;
+        padding: 1vw;
+    }
+
+    .qualidades img{
+        width: 330px;
+        height: 330px;
+    }
+
+    .qualidades h3{
+        font-size: 2.4rem;
+    }
+
+    .qualidades p{
+        margin-left: 8vw;
+        width: 35vw;
+        font-size: 1.8rem;
+    }
 }
