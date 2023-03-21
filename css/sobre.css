@@ -1,0 +1,283 @@
+/*MOBILE*/
+
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #CCCCFF;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+nav>img {
+    max-width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 0;
+}
+
+ul>li {
+    list-style: none;
+    font-size: 1.2rem;
+    align-self: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer {
+    background-color: #5336F6;
+    height: 15vh;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    color: grey;
+}
+
+.direitos-autorais {
+    color: grey;
+    margin: 0;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.infos img {
+    padding-right: 1vw;
+}
+
+.contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 35px;
+    padding: 4vw;
+}
+
+.whatsapp {
+    display: flex;
+    font-size: 0.5rem;
+}
+
+.horario {
+    display: flex;
+    font-size: 0.5rem
+}
+
+.visita {
+    background-color: #CCCCFF;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    padding: 2vh;
+    border-radius: 5px;
+    font-size: 0.7rem;
+}
+
+.topo{
+    background-image: url(../img/topo-sobre.jpg);
+    background-position: 40%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 49vh;
+    margin: 0;
+}
+
+.escola{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.escola h1{
+    color: #4B0082;
+    margin-bottom: 0;
+}
+
+.escola h2{
+    color: black;
+    border-radius: 1vw;
+    width: 70vw;
+    border-bottom: 1vw solid yellow;
+    text-align: center;
+    margin-bottom: 15vw;
+    padding-bottom: 2vw;
+}
+
+.conteudo{
+    background-image: url(../img/backgroud-conteudo.jpg);
+    background-position: 40%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: 1px 4px 9px #000000;
+    letter-spacing: 0.5vw;
+    line-height: 5.5vw;
+}
+
+.conteudo p{
+    margin: 1vw;
+}
+
+/*TABLET*/
+
+@media screen and (min-width:481px){
+
+    .infos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .infos p {
+        padding-right: 1.5vw;
+        margin: 0;
+        margin-top: 2vh;
+        font-size: 0.8rem;
+    }
+
+    .infos img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .visita {
+        font-size: 0.9rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav>img {
+        width: 150px;
+        height: 150px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul>li {
+        font-size: 1rem;
+    }
+
+    .escola{
+        font-size: 1rem;
+    }
+
+    .conteudo{
+        letter-spacing: 0.3vw;
+        line-height: none;
+    }
+}
+
+/*DESKTOP*/
+
+@media screen and (min-width: 1024px) {
+
+    ::-webkit-scrollbar{
+        width: 18px;
+    }
+
+    ::-webkit-scrollbar-track{
+        border-radius: 5px;
+        background-color: hsl(0, 0%, 87%);
+    }
+
+    ::-webkit-scrollbar-thumb{
+        border-radius: 35px;
+        background-color: hsl(240, 100%, 77%);
+    }
+
+    .infos {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .infos p {
+        font-size: 1.2rem;
+    }
+
+    .infos img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .visita {
+        font-size: 1rem;
+        padding: 2vw;
+        border-radius: 10px ;
+    }
+
+    .visita:hover{
+        transform: scale(1.2);
+    }
+
+    nav{
+        display: flex;
+        justify-content: flex-start;
+        height: 33vh;
+    }
+
+    nav>img{
+        width: 250px;
+        height: 250px;
+        padding-right: 12vw;
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+    }
+
+    ul>li{
+        padding: 1vw;
+        font-size: 2rem;
+    }
+
+    li:hover{
+        transform: scale(1.2);
+    }
+
+    .escola{
+        margin-top: 3vw;
+    }
+
+    .conteudo{
+        letter-spacing: 0;
+        line-height: 3vw;
+    }
+
+    .conteudo p{
+        margin: 0;
+    }
+}
+
