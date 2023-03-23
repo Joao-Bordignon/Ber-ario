@@ -96,70 +96,29 @@ footer a {
     font-size: 0.7rem;
 }
 
-.familia{
+.localizacao{
+    background-image: url(../img/backgroud-conteudo.jpg);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: justify;
 }
 
-.familia h1{
-    color: #2f11db;;
+.localizacao h1{
+    color: #2f11db;
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.69);
     text-align: center;
     width: 80vw;
     border-bottom: 2vw solid #9987fd;
     border-radius: 2vw;
+    margin: 1vw;
 }
 
-.carrossel{
-    overflow: hidden;
-
-}
-
-.carrossel-foto{
-    background-image: url(../img/background-extracurriculares.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+.maps{
+    width: 70%;
     display: flex;
     justify-content: center;
-}
-
-.carrossel-foto img{
-    margin: 3vw;
-    border-radius: 2vw;
-    box-shadow: -1px 3px 26px 6px rgba(0,0,0,0.57);
-}
-
-.carrossel > .carrossel-conteudo{
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    transition: all 500ms ease;
-
-}
-
-.carrossel > .carrossel-conteudo > .carrossel-foto {
-    flex: 0 0 auto;
-    width: 100%;
-}
-
-.carrossel > input:nth-child(1):checked ~ .carrossel-conteudo{
-    transform: translateX(0%);
-}
-
-.carrossel > input:nth-child(2):checked ~ .carrossel-conteudo{
-    transform: translateX(-100%);
-}
-.carrossel > input:nth-child(3):checked ~ .carrossel-conteudo{
-    transform: translateX(-200%);
-}
-
-.carrossel > input:nth-child(4):checked ~ .carrossel-conteudo{
-    transform: translateX(-300%);
-}
-
-.carrossel > input:nth-child(5):checked ~ .carrossel-conteudo{
-    transform: translateX(-400%);
+    padding: 5vw;
 }
 
 /*TABLET*/
@@ -283,11 +242,17 @@ footer a {
         transform: scale(1.2);
     }
 
-    .familia h1{
-        width: 40vw;
+    .localizacao{
+        display: flex;
+        flex-direction: column;
     }
 
-    .carrossel-foto img:hover{
-        transform: scale(1.23);
+    .localizacao h1{
+        width: 40vw;
+        margin: 12vw;
+    }
+
+    .maps{
+        padding: 2%;
     }
 }

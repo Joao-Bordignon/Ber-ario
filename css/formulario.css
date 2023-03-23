@@ -96,70 +96,40 @@ footer a {
     font-size: 0.7rem;
 }
 
-.familia{
+.forms{
+    background-image: url(../img/backgroud-conteudo.jpg);
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
-    text-align: justify;
+    padding: 2vw;
 }
 
-.familia h1{
-    color: #2f11db;;
+.forms h1{
+    color: #2f11db;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
     text-align: center;
     width: 80vw;
     border-bottom: 2vw solid #9987fd;
     border-radius: 2vw;
 }
 
-.carrossel{
-    overflow: hidden;
-
-}
-
-.carrossel-foto{
-    background-image: url(../img/background-extracurriculares.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-}
-
-.carrossel-foto img{
-    margin: 3vw;
+.forms p{
+    color: black;
+    font-size: 1.2rem;
+    border-bottom: 1vw solid #9987fd;
     border-radius: 2vw;
+    margin: 2vw;
+}
+
+.itens{
+    background-image: url(../img/papel.png);
+    background-position: 12%;
+    border-radius: 4vw;
+    border: 1vw solid black;
+    padding: 9vw;
     box-shadow: -1px 3px 26px 6px rgba(0,0,0,0.57);
-}
-
-.carrossel > .carrossel-conteudo{
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    transition: all 500ms ease;
-
-}
-
-.carrossel > .carrossel-conteudo > .carrossel-foto {
-    flex: 0 0 auto;
-    width: 100%;
-}
-
-.carrossel > input:nth-child(1):checked ~ .carrossel-conteudo{
-    transform: translateX(0%);
-}
-
-.carrossel > input:nth-child(2):checked ~ .carrossel-conteudo{
-    transform: translateX(-100%);
-}
-.carrossel > input:nth-child(3):checked ~ .carrossel-conteudo{
-    transform: translateX(-200%);
-}
-
-.carrossel > input:nth-child(4):checked ~ .carrossel-conteudo{
-    transform: translateX(-300%);
-}
-
-.carrossel > input:nth-child(5):checked ~ .carrossel-conteudo{
-    transform: translateX(-400%);
 }
 
 /*TABLET*/
@@ -205,8 +175,6 @@ footer a {
     ul>li {
         font-size: 1.5rem;
     }
-
-
 }
 
 /*DESKTOP*/
@@ -283,11 +251,23 @@ footer a {
         transform: scale(1.2);
     }
 
-    .familia h1{
-        width: 40vw;
+    .forms h1{
+        text-transform: uppercase;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, .5);
+        padding: 2vw;
+        width: 35vw;
     }
 
-    .carrossel-foto img:hover{
-        transform: scale(1.23);
+    .itens{
+        display: flex;
+        flex-direction: row;
+        padding: 2vw;
+        background-position: 14%;
+    }
+
+    .esquerda, .direita{
+        display: flex;
+        flex-direction: column;
+        padding: 1vw;
     }
 }
