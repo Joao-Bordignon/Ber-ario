@@ -352,38 +352,79 @@ footer a {
     }
 
     .interior h1{
+        width: 80vw;
         font-size: 2.3rem;
     }
 
     .interior h2{
+        width: 50vw;
         font-size: 1.7rem;
     }
 
     .topo img{
-        width: 35vw;
-        height: 50vh;
+        border-radius: 90%;
+        width: 400px;
+        height: 400px;
+    }
+
+    .horta, .playground, .biblioteca, .esportes, .cinema, .soneca{
+        width: 50%;
+        height: 50%;
+    }
+
+    .servicos{
+        display: flex;
+        flex-direction: column;
+
     }
 
     .complementares{
         display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .esquerda{
+        display: flex;
         flex-direction: row;
     }
 
+    .direita{
+        display: flex;
+        flex-direction: row;
+    }
 
     .conteudo h1, h2{
+        margin: 1vw;
+        padding: 2vw;
         font-size: 2rem;
     }
     .conteudo p{
+        width: 45vw;
         font-size: 1.5rem;
+        margin: 1vw;
+        padding: 1vw;
     }
 
     .atividades{
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        height: 75vh;
+        justify-content: space-evenly;
+        padding: 0;
+        border-radius: 0%;
+
+    }
+
+    .natacao, .judo, .bale, .xadrez, .esgrima, .futebol{
+        display: flex;
+        justify-content: center;
     }
 
     .atividades img{
-        width: 20vw;
-        height: 15vh;
+        border-radius: 90%;
+        width: 50%;
+        height: 50%;
     }
 }

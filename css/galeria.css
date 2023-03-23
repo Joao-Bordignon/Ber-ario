@@ -1,0 +1,163 @@
+/*MOBILE*/
+
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #CCCCFF;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+nav>img {
+    max-width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 0;
+}
+
+ul>li {
+    list-style: none;
+    font-size: 1.2rem;
+    align-self: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer {
+    background-color: #5336F6;
+    height: 15vh;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    color: grey;
+}
+
+.direitos-autorais {
+    color: grey;
+    margin: 0;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.infos img {
+    padding-right: 1vw;
+}
+
+.contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 35px;
+    padding: 4vw;
+}
+
+.whatsapp {
+    display: flex;
+    font-size: 0.5rem;
+}
+
+.horario {
+    display: flex;
+    font-size: 0.5rem
+}
+
+.visita {
+    background-color: #CCCCFF;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    padding: 2vh;
+    border-radius: 5px;
+    font-size: 0.7rem;
+}
+
+.familia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.familia h1{
+    color: #2f11db;;
+    text-align: center;
+    width: 80vw;
+    border-bottom: 2vw solid #9987fd;
+    border-radius: 2vw;
+}
+
+.carrossel{
+    overflow: hidden;
+
+}
+
+.carrossel-foto{
+    background-image: url(../img/background-extracurriculares.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.carrossel-foto img{
+    margin: 3vw;
+    border-radius: 2vw;
+    box-shadow: -1px 3px 26px 6px rgba(0,0,0,0.57);
+}
+
+.carrossel > .carrossel-conteudo{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    transition: all 500ms ease;
+
+}
+
+.carrossel > .carrossel-conteudo > .carrossel-foto {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.carrossel > input:nth-child(1):checked ~ .carrossel-conteudo{
+    transform: translateX(0%);
+}
+
+.carrossel > input:nth-child(2):checked ~ .carrossel-conteudo{
+    transform: translateX(-100%);
+}
+.carrossel > input:nth-child(3):checked ~ .carrossel-conteudo{
+    transform: translateX(-200%);
+}
+
+.carrossel > input:nth-child(4):checked ~ .carrossel-conteudo{
+    transform: translateX(-300%);
+}
+
+.carrossel > input:nth-child(5):checked ~ .carrossel-conteudo{
+    transform: translateX(-400%);
+}
