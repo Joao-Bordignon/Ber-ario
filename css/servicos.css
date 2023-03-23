@@ -97,52 +97,105 @@ footer a {
 }
 
 .topo{
-    background-image: url(../img/topo-sobre.jpg);
-    background-position: 40%;
+    background-image: url(../img/background-topo-servicos.jpg);
     background-repeat: no-repeat;
+    background-position: 23%;
     width: 100%;
-    height: 49vh;
-    margin: 0;
-}
-
-.escola{
+    height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 0.7rem;
+    justify-content: space-around;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
 }
 
-.escola h1{
-    color: #4B0082;
-    margin-bottom: 0;
+.topo img{
+    border-radius: 80%;
 }
 
-.escola h2{
+.interior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interior h1{
+    margin: 0;
+    padding: 2vw;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.interior h2{
+    margin: 2vw;
+    padding-bottom: 3vh;
+    text-align: center;
+    font-size: 1.2rem;
     color: black;
     border-radius: 1vw;
-    width: 70vw;
-    border-bottom: 1vw solid yellow;
-    text-align: center;
-    margin-bottom: 15vw;
-    padding-bottom: 2vw;
+    border-bottom: 1.3vw ridge #03dd89;
+}
+
+.servicos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.direita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .conteudo{
-    background-image: url(../img/backgroud-conteudo.jpg);
-    background-position: 40%;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    padding: 2vw;
-    font-size: 1.2rem;
-    color: #fff;
-    text-shadow: 1px 4px 9px #000000;
-    letter-spacing: 0.5vw;
-    line-height: 5.5vw;
+    align-items: center;
+    text-align: justify;
 }
 
-.conteudo p{
-    margin: 1vw;
+.conteudo h1, h2{
+    color: #2f11db;;
+    text-align: center;
+    width: 80vw;
+    border-bottom: 2vw solid #9987fd;
+    border-radius: 2vw;
+}
+
+.conteudo p{    
+    margin: 0;
+    padding: 5vw;
+    color: grey;
+}
+
+.complementares, .estrutura{
+    display: flex;
+    justify-content: center;
+}
+
+.atividades{
+    display: flex;
+    flex-direction: row;
+    padding-top: 3vw;
+    padding-bottom: 3vh;
+    width: 100%;
+    background-image: url(../img/background-extracurriculares.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 2vw;
+}
+
+.atividades img{
+    border-radius: 80%;
 }
 
 /*TABLET*/
@@ -186,16 +239,41 @@ footer a {
     }
 
     ul>li {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
-    .escola{
-        font-size: 0.8rem;
+    .topo{
+        height: 100vh;
     }
 
-    .conteudo{
-        letter-spacing: 0.3vw;
-        line-height: none;
+    .interior h1{
+        font-size: 2.3rem;
+    }
+
+    .interior h2{
+        font-size: 1.7rem;
+    }
+
+    .topo img{
+        width: 55vw;
+        height: 40vh;
+    }
+
+    .conteudo h1, h2{
+        font-size: 2rem;
+    }
+    .conteudo p{
+        font-size: 2rem;
+    }
+
+    .atividades{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .atividades img{
+        width: 20vw;
+        height: 15vh;
     }
 }
 
@@ -273,35 +351,39 @@ footer a {
         transform: scale(1.2);
     }
 
-    .topo{
-        background-position: top;
-        height: 69vh;
+    .interior h1{
+        font-size: 2.3rem;
     }
 
-    .escola{
-        margin-top: 3vw;
+    .interior h2{
+        font-size: 1.7rem;
     }
 
-    .conteudo{
-        height: 100vh;
+    .topo img{
+        width: 35vw;
+        height: 50vh;
+    }
+
+    .complementares{
         display: flex;
-        justify-content: center;
-        padding: 5vw;
-        letter-spacing: 0;
-        line-height: 3vw;
+        flex-direction: row;
     }
 
+
+    .conteudo h1, h2{
+        font-size: 2rem;
+    }
     .conteudo p{
-        width: 60vw;
-        margin: 0;
+        font-size: 1.5rem;
     }
 
-    .direitos-autorais{
-        font-size: 1rem;
+    .atividades{
+        display: flex;
+        justify-content: space-around;
     }
 
-    .direitos-autorais a:hover{
-        color: #7063bb;
+    .atividades img{
+        width: 20vw;
+        height: 15vh;
     }
 }
-
