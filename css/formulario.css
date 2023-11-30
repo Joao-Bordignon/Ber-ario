@@ -107,7 +107,7 @@ footer a {
 }
 
 .forms h1{
-    color: #2f11db;
+    color: #ffffff;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
     text-align: center;
     width: 80vw;
@@ -131,6 +131,73 @@ footer a {
     padding: 9vw;
     box-shadow: -1px 3px 26px 6px rgba(0,0,0,0.57);
 }
+
+.button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.6em 2em;
+    border: #9987fd solid 0.15em;
+    border-radius: 0.25em;
+    color: #9987fd;
+    font-size: 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 300ms, color 300ms;
+    user-select: none;
+  }
+  
+  .button p {
+    z-index: 1;
+  }
+  
+  .button:hover {
+    color: #212121;
+  }
+  
+  .button:active {
+    border-color: teal;
+  }
+  
+  .button::after, .button::before {
+    content: "";
+    position: absolute;
+    width: 9em;
+    aspect-ratio: 1;
+    background: #9987fd;
+    opacity: 50%;
+    border-radius: 50%;
+    transition: transform 500ms, background 300ms;
+  }
+  
+  .button::before {
+    left: 0;
+    transform: translateX(-8em);
+  }
+  
+  .button::after {
+    right: 0;
+    transform: translateX(8em);
+  }
+  
+  .button:hover:before {
+    transform: translateX(-1em);
+  }
+  
+  .button:hover:after {
+    transform: translateX(1em);
+  }
+  
+  .button:active:before,
+  .button:active:after {
+    background: teal;
+  }
+
+  button p{
+    border-bottom: none;
+  }
 
 /*TABLET*/
 
@@ -176,6 +243,8 @@ footer a {
         font-size: 1.5rem;
     }
 }
+
+
 
 /*DESKTOP*/
 
